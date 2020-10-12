@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "es2016",
+    //编译目标代码版本标准
+    "module": "ESNext",
+    //编译目标使用的模块化标准
+    "lib": [
+      "ES2015",
+      "dom",
+    ],
+    "strictNullChecks": true, //null,undefined不能赋值其他类型
+    "outDir": "./dist",
+    //指定输出目录
+    "esModuleInterop": true,
+    // "forceConsistentCasingInFileNames": true,
+    "noImplicitUseStrict": true, //不使用严格模式
+    // "strictPropertyInitialization": true,//类的属性必须初始化
+    "removeComments": true, //删除编译结果的js文件中的注释
+    "noImplicitAny": true,
+    "declaration": true
+  },
+  "include": [
+    "./src"
+  ]
+  //只编译src目录下的ts文件
+  //  "files": ["./src/index.ts"] //只编译index.ts文件
+}
